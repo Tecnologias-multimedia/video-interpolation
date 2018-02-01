@@ -1,0 +1,31 @@
+Instrucciones:
+    1. Debemos cargar el archivo
+    2. Elegir el destino del archivo (debemos escribir ".avi" al final del nombre para que funcione).
+    3. Por último, podemos procesar el video.
+
+
+################################
+Interpolación de imagenes.
+################################
+
+DESCRIPCIÓN:
+
+La generación de imágenes situadas entre imágenes conocidas de una secuencia de vídeo tiene multitud de aplicaciones, tal como la compresión de vídeo o la mejora de la visualización de vídeo. Básicamente, esta técnica consiste en, dadas dos imágenes consecutivas A y C, construir una imagen intermedia (desconocida) B, usando como datos los pixels de A y C.
+
+Prácticamente todas las técnicas de interpolación conocidas pueden aplicarse a la interpolación de imágenes en vídeo, aunque las dos más conocidas están basadas en la interpolación lineal (linear blending) y en la estimación del flujo óptico (optical flow), siendo esta última una la que mejores resultados proporciona.
+
+En este proyecto se trata de implementar una aplicación que dada una secuencia de imágenes (vídeo), genere otra donde entre cada par de imágenes vecinas (A, C), se genere otra intermedia (B) usando para ello el cálculo del flujo óptico entre A y C.
+
+LINKS (de interes):
+
+Estimación del flujo óptico en OpenCV:
+http://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_lucas_kanade.html
+
+Estimación del flujo óptico en OpenCV y GPUs:
+http://study.marearts.com/2014/04/opencv-study-example-source-code-for.html
+
+Ejemplo de interpolación de imágenes en vídeo:
+https://www.youtube.com/watch?v=zHiJXyoEc9Y
+
+Ejemplo de interpolación de imágenes en vídeo (Poner a 60 fps y velocidad de reproducción 25% para apreciar mejor el resultado):
+https://www.youtube.com/watch?v=882c25af2hM
